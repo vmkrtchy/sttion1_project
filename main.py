@@ -1,11 +1,56 @@
-# import tkinter as tk
-
-# root = tk.Tk()
-
-# temp_2 = f"This weekend I am going camping with {ProperNoun} {PersonsName}. I packed my lantern, sleeping bag, and {Noun}. I am so {Adjective} {Feeling} to {Verb} in a tent. I am {Adjective} {Feeling} 2 we might see an {Animal}, I hear theyre kind of dangerous. While we are camping, we are going to hike, fish, and {Verb2}. I have heard that the {Color} lake is great for { Verb} {ending in ing} . Then we will {Adverb} {ending in ly} hike through the forest for {Number} {Measure of Time}. If I see a {Color} {Animal} while hiking, I am going to bring it home as a pet! At night we will tell {Number} {Silly Word} stories and roast {Noun2} around the campfire!!"
 
 
-temp_3 = "Dear {Proper Noun} {Persons Name}, I am writing to you from a {Adjective} castle in an enchanted forest. I found myself here one day after going for a ride on a {Color} {Animal} in {Place}. There are {Adjective2} {Magical Creature {Plural}} and {Adjective3} {Magical Creature {Plural}2} here! In the { Room in a House} there is a pool full of {Noun}. I fall asleep each night on a {Noun2} of {Noun{Plural}3} and dream of {Adjective4} { Noun {Plural}4}. It feels as though I have lived here for {Number} { Measureof time}. I hope one day you can visit, although the only way to get here now is {Verb {ending in ing}} on a {Adjective5} {Noun5}!!"
+def temp3():
+    ProperNoun         = input("enter Proper Noun")
+    PersonsName        = input("enter Persons Name")
+    Noun               = input("enter Noun")
+    Adjective          = input(" enter Adjective")
+    Verb               = input("")
+    Adjective2         = input("")
+    Animal             = input("")
+    Verb2              = input("")
+    Color              = input("")
+    Verbendingining    = input("")
+    Adverbeendinginly  = input("")
+    Number             = input("")
+    MeasureofTime      = input("")
+    Color2             = input("")
+    Animal2            = input("")
+    Number2            = input("")
+    SillyWord          = input("")
+    Noun2              = input("")
+
+    
+
+    temp_3= f"This weekend I am going camping with {ProperNoun} {PersonsName}. I packed my lantern, sleeping bag, and {Noun}. I am so {Adjective} to {Verb} in a tent. I am {Adjective2} we might see an {Animal}, I hear theyre kind of dangerous. While we are camping, we are going to hike, fish, and {Verb2}. I have heard that the {Color} lake is great for { Verbendingining} . Then we will {Adverbeendinginly} hike through the forest for {Number} {MeasureofTime}. If I see a {Color2} {Animal2} while hiking, I am going to bring it home as a pet! At night we will tell {Number2} {SillyWord} stories and roast {Noun2} around the campfire!!"
+
+
+def temp2():
+    PersonsName
+    Adjective
+    Color
+    Animal
+    Place
+    Adjective2
+    MagicalCreaturePlural
+    Adjective3
+    MagicalCreaturesPlural2
+    RoominaHouse
+    Noun
+    Noun2
+    NounPlural
+    Adjective4
+    NounPlural4
+    Number
+    Measureoftime
+    Verbendingining
+    Adjective5
+    Noun5
+
+
+    temp_2 = f" Dear {PersonsName}, I am writing to you from a {Adjective} castle in an enchanted forest. I found myself here one day after going for a ride on a {Color} {Animal} in {Place}. There are {Adjective2} {MagicalCreaturePlural} and {Adjective3} {MagicalCreaturesPlural2} here! In the {RoominaHouse} there is a pool full of {Noun}. I fall asleep each night on a {Noun2} of {NounPlural3} and dream of {Adjective4} {NounPlural4}. It feels as though I have lived here for {Number} { Measureoftime}. I hope one day you can visit, although the only way to get here now is {Verbendingining} on a {Adjective5} {Noun5}!!"
+
+    print(temp_2)
 
 def temp_1():
     Number = input("Enter Number: ")
@@ -30,8 +75,9 @@ def temp_1():
 
     print(temp_1)
 
-choose_text = input("choose story")
-if choose_text == "Hospital":
+choose_text = input("choose story a, b  or  c ")
+if choose_text == "a":
     temp_1()
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-# root.mainloop()
+if choose_text == "b":
+	temp2()
+
