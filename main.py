@@ -4,9 +4,19 @@ import time
 import sys
 import curses, time, os
 from time import sleep
+from pyfiglet import Figlet
+import os
 
+colors = ['yellow', 'red', 'green', 'blue']
+f = Figlet(font="banner3-D",width = 200)
+i = Figlet(font="doh",width = 200)
+print (colored (f.renderText('Tumo labs'),'yellow'))
 
-
+def sp(str):
+  for letter in str:
+    sys.stdout.write(letter)
+    sys.stdout.flush()
+    time.sleep(0.09)
 
 def temp3():
     ProperNoun         = input(colored("enter Proper Noun",'cyan'))
@@ -27,17 +37,24 @@ def temp3():
     Number2            = input(colored("Enter number",'cyan'))
     SillyWord          = input(colored("Enter number",'cyan'))
     Noun2              = input(colored("Enter Noun",'cyan'))
-    print("Waiting story gasnerating")
-    sys.stdout.write('\rloading\n')
-#    sp("▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▇ ▆ ▅ ▄ ▃ ▁\n\n")
-    animation = ["[■□□□□□□□□□]","[■■□□□□□□□□]", "[■■■□□□□□□□]", "[■■■■□□□□□□]", "[■■■■■□□□□□]", "[■■■■■■□□□□]", "[■■■■■■■□□□]", "[■■■■■■■■□□]", "[■■■■■■■■■□]", "[■■■■■■■■■■]"]
-    for i in range(len(animation)):
-        time.sleep(0.2)
-        sys.stdout.write("\r" + animation[i % len(animation)])
-        sys.stdout.flush()
+
     temp_3= f"This weekend I am going camping with {ProperNoun} {PersonsName}. I packed my lantern, sleeping bag, and {Noun}. I am so {Adjective} to {Verb} in a tent. I am {Adjective2} we might see an {Animal}, I hear theyre kind of dangerous. While we are camping, we are going to hike, fish, and {Verb2}. I have heard that the {Color} lake is great for { Verbendingining} . Then we will {Adverbeendinginly} hike through the forest for {Number} {MeasureofTime}. If I see a {Color2} {Animal2} while hiking, I am going to bring it home as a pet! At night we will tell {Number2} {SillyWord} stories and roast {Noun2} around the campfire!!"
 
+    os.system('clear')
+    print (colored (f.renderText('Tumo labs'),'yellow'))
+    print (colored (i.renderText('Story 1'),'blue'))
+    sys.stdout.write('                                               ')
+    sp("▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▇ ▆ ▅ ▄ ▃ ▁\n\n")
     print(temp_3)
+
+
+
+
+
+
+
+
+
 
 def temp2():
     PersonsName                 = input(colored("enter Persons Name",'cyan'))
@@ -60,12 +77,23 @@ def temp2():
     Verbendingining             = input(colored("enter Verb ending in -ing",'cyan'))
     Adjective5                  = input(colored("enter Adjective",'cyan'))
     Noun5                       = input(colored("enter Noun",'cyan'))
-
+    NounPlural3 				= input(colored("Enter noun ",'cyan'))
 
     temp_2 = f" Dear {PersonsName}, I am writing to you from a {Adjective} castle in an enchanted forest. I found myself here one day after going for a ride on a {Color} {Animal} in {Place}. There are {Adjective2} {MagicalCreaturePlural} and {Adjective3} {MagicalCreaturesPlural2} here! In the {RoominaHouse} there is a pool full of {Noun}. I fall asleep each night on a {Noun2} of {NounPlural3} and dream of {Adjective4} {NounPlural4}. It feels as though I have lived here for {Number} { Measureoftime}. I hope one day you can visit, although the only way to get here now is {Verbendingining} on a {Adjective5} {Noun5}!!"
-    sys.stdout.write('\rloading\n')
+
+    os.system('clear')
+    print (colored (f.renderText('Tumo labs'),'yellow'))
+    print (colored (i.renderText('Story 2'),'blue'))
+    sys.stdout.write('                                               ')
     sp("▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▇ ▆ ▅ ▄ ▃ ▁\n\n")
+
     print(temp_2)
+
+
+
+
+
+
 
 def temp_1():
     Number = input(colored("Enter Number: ",'cyan'))
@@ -75,7 +103,7 @@ def temp_1():
     Noun = input(colored("Enter Noun: ",'cyan'))
     Color = input(colored("Enter color: ",'cyan'))
     PartoftheBody = input(colored("Enter Part of the Body: ",'cyan'))
-    Verb = input(colored("Enter any Verb",'cyan'))
+    VerNounPlural3b = input(colored("Enter any Verb",'cyan'))
     Number2 = input(colored("Enter Number: ",'cyan'))
     Noun2 = input(colored("Enter Noun: ",'cyan'))
     Noun3 = input(colored("Enter Noun: ",'cyan'))
@@ -84,10 +112,16 @@ def temp_1():
     Adjective3 = input(colored("Enter Adjective again: ",'cyan'))
     SillyWord = input(colored("Enter Silly Word",'cyan'))
     ModeofTransportation = input(colored("Enter Modeof Transportation",'cyan'))
+    Verb  = input(colored("Enter Verb ",'cyan'))
+
 
 
     temp_1 = f"It was about {Number} {Measureoftime} ago when I arrived at the hospital in a {ModeofTransportation}. The hospital is a/an {Adjective} place, there are a lot of {Adjective2} {Noun} here. There are nurses here who have {Color} {PartoftheBody}. If someone wants to come into my room I told them that they have to {Verb} first. I’ve decorated my room with {Number2} {Noun2}. Today I talked to a doctor and they were wearing a {Noun3} on their {PartoftheBody2}. I heard that all doctors {Verb} {Noun4} every day for breakfast. The most { Adjective3} thing about being in the hospital is the {SillyWord} {Noun}!"
-    sys.stdout.write('\rloading\n')
+
+    os.system('clear')
+    print (colored (f.renderText('Tumo labs'),'yellow'))
+    print (colored (i.renderText('Story 3'),'blue'))
+    sys.stdout.write('                                               ')
     sp("▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▇ ▆ ▅ ▄ ▃ ▁\n\n")
     print(temp_1)
 
