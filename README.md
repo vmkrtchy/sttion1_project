@@ -1,25 +1,4 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
-
 
 
 
@@ -67,16 +46,6 @@
 
 
 
-Mad Libs is a game with a basic story template that has blank spaces which need to be filled by the user. The fun part is that the user inputs words without knowing the story ahead of time.
-
-
-Write a program on Python that does the following:
-
-* Allows the user to pick one of the templates
-* Asks the user to input words. “Type number”, for example
-* Generate a story afterwards and shows it to the user
-
-Don't bother with any additional functions for now, but make sure your program follows these 3 conditions. You will have to use the “random” library, and the only functions you’ll be able to use will be print() and input() or make your own ones. We recommend using one of the three templates provided, which will make the evaluation process easier for your peers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
